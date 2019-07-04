@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+public class score : MonoBehaviour
+{
+    public Transform player;
+    public Text scoreText;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float a;
+        a = player.position.z + 5;
+        scoreText.text = a.ToString("0");
+        
+    }
+}
